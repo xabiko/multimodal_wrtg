@@ -1,14 +1,41 @@
 <!doctype html>
 <html>
+
+	<!-- HHHHHHHHHHHHHHHEADDDDDDDDDDDDDDDDD -->
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Fair Authorship Attribution in the Open Internet</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Google Font Roboto Condensed -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> -->
+		<style>
+			.column {
+			  float: left;
+			  width: 50%;
+			}
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			.popup{
+			  position:fixed;
+			  left:50%;
+			}
+			.popup .wrapper{
+			  position:relative;
+			  left:-50%;
+			  width:850px;
+			}
+    </style>
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -22,11 +49,83 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
+
+	<!-- BBBBBBBBBBBBBBBODYYYYYYYYYYYYYYYYYYYY -->
+
 	<body>
+
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<!-- SSSSSSSSLIDEEEEEEEEE 1 -->
+				<section data-background="images/reliability-rajant-mesh-wireless-network.jpg">
+					<div class="popup">
+					  <div class="wrapper">
+							 <h2 align="left" style="color:silver;">Fair Content Attribution in the Open Internet</h2>
+							 <span style="color:gainsboro; display: inline-block;" class="fragment fade-up">
+							 <p style="font-size:30px; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+								 &ldquo;On the one hand information wants to be expensive, because it's so valuable.
+								 The right information in the right place just changes your life. On the other hand, information wants to be free,
+								 because the cost of getting it out is getting lower and lower all the time.
+								 So you have these two fighting against each other.&rdquo;
+							 </p>
+							 <a href="https://en.wikipedia.org/wiki/Information_wants_to_be_free" target="_blank"><p align="right" style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">-Stewart Brand</p></a>
+							 </span>
+					  </div>
+					</div>
+				</section>
+
+				<!-- SSSSSSSSLIDEEEEEEEEE 2 -->
+				<section>
+
+						<div class="row">
+						  <div class="column">
+								<img src="images/storage_memory_prices-2017-12.png" style="height:350px; width:560px; margin-bottom:0px;">
+								<img src="images/image003.png" style="height:300px; margin-top:0px;">
+							</div>
+						  <div class="column">
+								<p align="left" style="font-size:33px">Given the exponential rate of content creation being hosted in our media platforms over time,
+									fair attribution of work and authorship of original content is stressing our Intellectual Property laws
+									like never before. Costly patent disputes keep clashing with the throughput and speed of information dissemination
+									in our current era.</p>
+
+								<span style="color:gainsboro; display: inline-block;" class="fragment fade-down">
+									<p style="font-size:37px;">Pinterest &nbsp 200 million active users &nbsp /month</p>
+									<hr>
+								</span>
+								<span style="color:gainsboro; display: inline-block;" class="fragment fade-down">
+									<p style="margin-top:0px; font-size:37px;">Instagram &nbsp 4.2 billion likes &nbsp /day</p>
+									<hr>
+								</span>
+								<span style="color:gainsboro; display: inline-block;" class="fragment fade-down">
+									<p style="margin-top:0px; font-size:37px;">YouTube &nbsp 300 hours of video &nbsp /min</p>
+									<hr>
+									<a href="https://www.brandwatch.com/blog/amazing-social-media-statistics-and-facts/" target="_blank"><p align="right" style="font-size:25px; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Source</p></a>
+								</span>
+							</div>
+						</div>
+				</section>
+
+				<!-- SSSSSSSSSSSSSSLIDEEEEEEEEEEEEEE 3 -->
+
+				<section>
+					<div class="row">
+						<div class="column">
+							<p style="font-size:35px; color:gainsboro; margin-top:20px; margin-bottom:35px;">The recently infamous Instagram account @fuckjerry exemplifies the tremendous discontent that these issues can create.</p>
+							<p align="right" style="font-size:30px;">Among all of this new content, the line between originality and fraudulence faints,
+								especially when there are money and recognition at stake. The ease of access to Digital Property in our current era puts
+								the famous <a href="https://en.wikipedia.org/wiki/Free-rider_problem" target="_blank" style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">free-rider problem</a> under a new lens, where original content creators can claim authorship after their creations
+								have gained popularity but have a harder time claiming economic compensation; after individuals who benefited from these public
+								online resources gave them exposure, attention, and incurred positive externalities that elevated this content but are hard to track and
+								quantify.</p>
+							</div>
+						<div class="column">
+							<img src="images/fuckjerry_news.png" style="width:100%; margin-top:0px;">
+						</div>
+					</div>
+
+				</section>
+
 			</div>
 		</div>
 
@@ -37,6 +136,10 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				center: false,
+				transition: 'concave',
+				width: '100%',
+    		height: '100%',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
